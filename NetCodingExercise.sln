@@ -1,0 +1,58 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.20617.1 PREVIEW
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SalesTaxes", "SalesTaxes\SalesTaxes.csproj", "{6DF6AACD-41A5-4C4C-9810-42698201BD67}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTest", "UnitTest\UnitTest.csproj", "{9713D7E7-B3D9-4E80-9372-A853820EA162}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrafficFlow", "TrafficFlow\TrafficFlow.csproj", "{5E9657FF-FC7A-495E-8BFD-032C77FCCA0B}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "SalexTaxes_F", "SalexTaxes_F\SalexTaxes_F.fsproj", "{1389536B-C062-4D4F-8717-F6F1266D5771}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 5
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://alexan.visualstudio.com/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = SalesTaxes\\SalesTaxes.csproj
+		SccProjectName1 = SalesTaxes
+		SccLocalPath1 = SalesTaxes
+		SccProjectUniqueName2 = TrafficFlow\\TrafficFlow.csproj
+		SccProjectName2 = TrafficFlow
+		SccLocalPath2 = TrafficFlow
+		SccProjectUniqueName3 = UnitTest\\UnitTest.csproj
+		SccProjectName3 = UnitTest
+		SccLocalPath3 = UnitTest
+		SccProjectUniqueName4 = SalexTaxes_F\\SalexTaxes_F.fsproj
+		SccProjectName4 = SalexTaxes_F
+		SccLocalPath4 = SalexTaxes_F
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6DF6AACD-41A5-4C4C-9810-42698201BD67}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6DF6AACD-41A5-4C4C-9810-42698201BD67}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6DF6AACD-41A5-4C4C-9810-42698201BD67}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6DF6AACD-41A5-4C4C-9810-42698201BD67}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9713D7E7-B3D9-4E80-9372-A853820EA162}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9713D7E7-B3D9-4E80-9372-A853820EA162}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9713D7E7-B3D9-4E80-9372-A853820EA162}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9713D7E7-B3D9-4E80-9372-A853820EA162}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E9657FF-FC7A-495E-8BFD-032C77FCCA0B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E9657FF-FC7A-495E-8BFD-032C77FCCA0B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E9657FF-FC7A-495E-8BFD-032C77FCCA0B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E9657FF-FC7A-495E-8BFD-032C77FCCA0B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1389536B-C062-4D4F-8717-F6F1266D5771}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1389536B-C062-4D4F-8717-F6F1266D5771}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1389536B-C062-4D4F-8717-F6F1266D5771}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1389536B-C062-4D4F-8717-F6F1266D5771}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
