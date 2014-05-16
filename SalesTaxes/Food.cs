@@ -6,11 +6,7 @@ using System.Threading.Tasks;
 
 namespace SalesTaxes
 {
-    class Food : Product
+    class Food: Product
     {
-        public Food()
-        { 
-            IsExempt = true; 
-        }       
     }
 }

@@ -8,9 +8,5 @@ namespace SalesTaxes
 {
     class Book : Product
     {
-        public Book()
-        { 
-            IsExempt = true; 
-        }       
     }
 }
