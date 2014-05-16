@@ -8,3 +8,4 @@ T:\Alex\Projects\DotNetTest\TrafficFlow\obj\Debug\TrafficFlow.exe
 T:\Alex\Projects\DotNetTest\TrafficFlow\obj\Debug\TrafficFlow.pdb
 T:\Alex\Projects\DotNetTest\TrafficFlow\bin\Debug\TrafficFlow.exe
 T:\Alex\Projects\DotNetTest\TrafficFlow\bin\Debug\TrafficFlow.pdb
+T:\Alex\Projects\DotNetTest\TrafficFlow\obj\Debug\TrafficFlow.csprojResolveAssemblyReference.cache
