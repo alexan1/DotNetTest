@@ -5,3 +5,5 @@ T:\Alex\Projects\SalesTaxes\SalesTaxes\SalesTaxes\bin\Debug\SalesTaxes.pdb
 T:\Alex\Projects\SalesTaxes\SalesTaxes\SalesTaxes\obj\Debug\SalesTaxes.csprojResolveAssemblyReference.cache
 T:\Alex\Projects\SalesTaxes\SalesTaxes\SalesTaxes\obj\Debug\SalesTaxes.exe
 T:\Alex\Projects\SalesTaxes\SalesTaxes\SalesTaxes\obj\Debug\SalesTaxes.pdb
+T:\Alex\Projects\DotNetTest\SalesTaxes\obj\Debug\SalesTaxes.csprojResolveAssemblyReference.cache
+T:\Alex\Projects\DotNetTest\SalesTaxes\obj\Debug\SalesTaxes.exe

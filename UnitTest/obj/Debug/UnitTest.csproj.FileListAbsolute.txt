@@ -1,0 +1,9 @@
+T:\Alex\Projects\DotNetTest\UnitTest\bin\Debug\UnitTest.dll
+T:\Alex\Projects\DotNetTest\UnitTest\bin\Debug\UnitTest.pdb
+T:\Alex\Projects\DotNetTest\UnitTest\bin\Debug\SalesTaxes.exe
+T:\Alex\Projects\DotNetTest\UnitTest\bin\Debug\TrafficFlow.exe
+T:\Alex\Projects\DotNetTest\UnitTest\bin\Debug\SalesTaxes.pdb
+T:\Alex\Projects\DotNetTest\UnitTest\bin\Debug\TrafficFlow.pdb
+T:\Alex\Projects\DotNetTest\UnitTest\obj\Debug\UnitTest.csprojResolveAssemblyReference.cache
+T:\Alex\Projects\DotNetTest\UnitTest\obj\Debug\UnitTest.dll
+T:\Alex\Projects\DotNetTest\UnitTest\obj\Debug\UnitTest.pdb

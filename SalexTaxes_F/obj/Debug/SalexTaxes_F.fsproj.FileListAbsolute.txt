@@ -1,0 +1,8 @@
+T:\Alex\Projects\DotNetTest\SalexTaxes_F\bin\Debug\SalexTaxes_F.exe.config
+T:\Alex\Projects\DotNetTest\SalexTaxes_F\bin\Debug\SalexTaxes_F.XML
+T:\Alex\Projects\DotNetTest\SalexTaxes_F\bin\Debug\SalexTaxes_F.exe
+T:\Alex\Projects\DotNetTest\SalexTaxes_F\bin\Debug\SalexTaxes_F.pdb
+T:\Alex\Projects\DotNetTest\SalexTaxes_F\bin\Debug\FSharp.Core.dll
+T:\Alex\Projects\DotNetTest\SalexTaxes_F\bin\Debug\FSharp.Core.xml
+T:\Alex\Projects\DotNetTest\SalexTaxes_F\obj\Debug\SalexTaxes_F.exe
+T:\Alex\Projects\DotNetTest\SalexTaxes_F\obj\Debug\SalexTaxes_F.pdb
