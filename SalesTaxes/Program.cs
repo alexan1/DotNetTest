@@ -10,7 +10,7 @@ namespace SalesTaxes
     {
         static void Main(string[] args)
         {
-            List<ShoppingCartItem> itemList = getItemsList();
+            List<CartItem> itemList = getItemsList();
 
             //decimal salestaxes = 0.00m;
             //decimal totalprice = 0.00m;
@@ -27,13 +27,13 @@ namespace SalesTaxes
             //Console.ReadLine();
         }
 
-        private static List<ShoppingCartItem> getItemsList()
+        private static List<CartItem> getItemsList()
         {
-            List<ShoppingCartItem> Items = new List<ShoppingCartItem>();
+            List<CartItem> Items = new List<CartItem>();
             //input 1
-            Items.Add(new ShoppingCartItem { Item = new Book { Name = "War and Peace", Price = 12.49m, IsImport = false }, Quantity = 1 });
-            Items.Add(new ShoppingCartItem { Item = new Product { Name = "music CD", Price = 14.99m, IsImport = false }, Quantity = 1 });
-            Items.Add(new ShoppingCartItem { Item = new Food { Name = "chocolate bar", Price = 0.85m, IsImport = false }, Quantity = 1 });            
+            Items.Add(new CartItem { Item = new Book { Name = "War and Peace", Price = 12.49m, IsImport = false }, Quantity = 1 });
+            Items.Add(new CartItem { Item = new Product { Name = "music CD", Price = 14.99m, IsImport = false }, Quantity = 1 });
+            Items.Add(new CartItem { Item = new Food { Name = "chocolate bar", Price = 0.85m, IsImport = false }, Quantity = 1 });            
            
             return Items;
         }
