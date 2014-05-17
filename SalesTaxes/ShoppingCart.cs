@@ -8,5 +8,6 @@ namespace SalesTaxes
 {
     class ShoppingCart
     {
+
     }
 }
