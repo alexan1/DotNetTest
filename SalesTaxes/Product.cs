@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace SalesTaxes
 {
     public class Product
-    {      
+    {   
         public string Name { get; set; }        
         public decimal Price { get; set; }        
         public bool IsImport { get; set; }
