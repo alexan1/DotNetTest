@@ -6,9 +6,14 @@ using System.Threading.Tasks;
 
 namespace SalesTaxes
 {
-    public class CartItem
+    public class CartItem : Product
     {        
         public Product Item { get; set; }
+
+        public CartItem(Product item)
+        {
+            Item = item;
+        }
         public int Quantity { get; set; }
 
         public decimal GetPrice()
