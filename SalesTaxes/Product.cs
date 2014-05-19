@@ -12,8 +12,7 @@ namespace SalesTaxes
         public decimal Price { get; set; }        
         public bool IsImport { get; set; }
         public bool IsExempt { get; set; }
-
-        public abstract decimal GetPrice();
+                
         public abstract decimal GetSalesTax();
         public abstract decimal GetTotal();
         

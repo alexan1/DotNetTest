@@ -9,5 +9,10 @@ namespace SalesTaxes
     class BasicSalesTax : SalesTax
     {
         public decimal Rate { get; set; }
+
+        public BasicSalesTax()
+        {
+            Rate = 0.1m;
+        }
     }
 }

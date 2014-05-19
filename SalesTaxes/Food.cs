@@ -8,10 +8,6 @@ namespace SalesTaxes
 {
     class Food: Product
     {
-        public override decimal GetPrice()
-        {
-            return 0.0m;
-        }
         public override decimal GetSalesTax()
         {
             return 0.0m;

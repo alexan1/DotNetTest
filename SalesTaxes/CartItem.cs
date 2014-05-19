@@ -9,24 +9,23 @@ namespace SalesTaxes
     public class CartItem : Product
     {        
         public Product Item { get; set; }
-
-        public CartItem(Product item)
-        {
-            Item = item;
-        }
+        public SalesTax Tax { get; set; }
         public int Quantity { get; set; }
 
-        public decimal GetPrice()
+        public CartItem(Product item, SalesTax tax)
         {
-            return 0.0m;
-        }
+            Item = item;
+            Tax = tax;
+        }        
+        
         public decimal GetSalesTax()
         {
-            return 0.0m;
+            return Item.GetSalesTax() + Tax.CalculateTax(Item.Price);
+            
         }
         public decimal GetTotal()
         {
-            return 0.0m;
+            return (Item.Price + GetSalesTax()) * Quantity;
         }
        
     }

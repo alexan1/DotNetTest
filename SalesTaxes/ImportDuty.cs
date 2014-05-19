@@ -9,5 +9,10 @@ namespace SalesTaxes
     class ImportDuty : SalesTax
     {
         public decimal Rate { get; set; }
+
+        public ImportDuty()
+        {
+            Rate = 0.05m;
+        }
     }
 }

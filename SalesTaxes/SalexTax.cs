@@ -11,9 +11,9 @@ namespace SalesTaxes
         public decimal Rate { get; set; }
         public virtual decimal CalculateTax(decimal itemPrice)
         {
-            decimal tempTax = itemPrice * this.Rate;
-            decimal roundedTax = Rounding.Round(tempTax);
-            return roundedTax;
+            return itemPrice * Rate;
+            //decimal roundedTax = Rounding.Round(tempTax);
+            //return roundedTax;
         }
     }
 }
