@@ -11,13 +11,14 @@ namespace TrafficFlow
         public int Number { get; set; }
 
         public double SwitchTime { get; set; }
+
         public bool IsGreen(double time)
         {
             double num = Math.Floor(time / SwitchTime);
            
                 return num % 2 == 0;            
         }
-        public double TimeToWait(double time)
+        public double GetTimeToWait(double time)
         {
             if (!IsGreen(time))
             {

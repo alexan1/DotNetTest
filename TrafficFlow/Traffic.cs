@@ -7,18 +7,18 @@ using System.Threading.Tasks;
 namespace TrafficFlow
 {
     class Traffic
-    {
-        public Car mycar;
-        public IList<Light> LightList;
-        public static double lengthbetweenLights { get; set; }
+    {        
+        public Car CurrentCar { get; set; }
+        public IList<Light> Lights { get; set; }
+        public static double lengthBetweenLights { get; set; }
 
-        public double getTravelTime()
+        public double GetTravelTime()
         {
-            double currenttime = lengthbetweenLights / mycar.Speed;            
+            double currenttime = lengthBetweenLights / CurrentCar.Speed;            
             
-            foreach (Light light in LightList)
+            foreach (Light light in Lights)
             {               
-                currenttime += lengthbetweenLights / mycar.Speed + light.TimeToWait(currenttime);                
+                currenttime += lengthBetweenLights / CurrentCar.Speed + light.GetTimeToWait(currenttime);                
             }
             
             return currenttime;

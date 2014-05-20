@@ -6,11 +6,15 @@ using System.Threading.Tasks;
 
 namespace SalesTaxes
 {
-    class Food : Product
+    class Food: Product
     {
-        public Food()
-        { 
-            IsExempt = true; 
-        }       
+        public override decimal GetSalesTax()
+        {
+            return 0.0m;
+        }
+        public override decimal GetTotal()
+        {
+            return 0.0m;
+        }
     }
 }

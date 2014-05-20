@@ -6,27 +6,15 @@ using System.Threading.Tasks;
 
 namespace SalesTaxes
 {
-    public class Product
-    {
-        public enum ProductType
-        {
-            food = 1,
-            book = 2,
-            medical = 3,
-            other = 4
-        };       
-
-        public string Name { get; set; }
-        //public int Quantity { get; set; }
+    public abstract class Product
+    {   
+        public string Name { get; set; }        
         public decimal Price { get; set; }        
-        public ProductType Type { get; set; }
         public bool IsImport { get; set; }
-        public bool IsExempt
-        {
-            get
-            {
-                return (int)Type < 4;
-            }
-        }
+        public bool IsExempt { get; set; }
+                
+        public abstract decimal GetSalesTax();
+        public abstract decimal GetTotal();
+        
     }
 }

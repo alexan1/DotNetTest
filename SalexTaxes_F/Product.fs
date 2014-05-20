@@ -1,33 +1,53 @@
-﻿namespace SalexTaxes    
+﻿namespace SalexTaxes
+
+module Product = 
 
     type ProductType = 
-        |food = 1
-        |book = 2
-        |medical = 3
-        |other = 4
+        |Food
+        |Book
+        |Medical
+        |Other
 
     type Product =
         {Name : string;
         Type : ProductType;        
         Price : decimal;        
-        IsImport: bool;
-        IsExempt : bool}
+        IsImport: bool}
+            
+    let tax rate price = price * rate
+    let basicTax = tax 0.1m
+    let importDuty = tax 0.05m 
 
-    type ShoppingCart =
-        {item : Product;
-        Quantity: int;
-        Taxes: decimal}
+    type ShoppingCartItem =
+        {Item : Product;
+        Quantity: int}
+        member x.BasicTaxes = 
+            match x.Item.Type with
+                | Food | Book | Medical -> 0M
+                | _ -> basicTax x.Item.Price
+        member x.importDuty =
+            if x.Item.IsImport
+            then importDuty(x.Item.Price + x.BasicTaxes)
+            else 0M
 
-    type Recit = seq<ShoppingCart>
-    
-    module SalexTaxes =
-        let PrintRecit recit = 
-            Seq.iter (fun x -> printf "%s\r" x.Name) recit
+                    
+    module Order =
+            
+        let price (order : List<ShoppingCartItem>)  = 
+            order |> List.sumBy (fun x -> x.Item.Price * (decimal)x.Quantity) 
 
-        let prod1 = {Name = "book"; Type = ProductType.book; Price = 12.49m; IsImport = false; IsExempt = true} 
-        let prod2 = {Name = "music CD"; Type = ProductType.other; Price = 14.99m; IsImport = false; IsExempt = false} 
-        let prod3 = {Name = "chocolate bar"; Type = ProductType.food; Price = 0.85m; IsImport = false; IsExempt = true} 
+        let taxes (order : List<ShoppingCartItem>)  = 
+            order |> List.sumBy (fun x -> (x.BasicTaxes + x.importDuty) * (decimal)x.Quantity) 
 
-        let prodSeq =  [prod1; prod2; prod3]
+        let Printorder order =             
+            order |> List.iter (fun x -> printf "%s: %M\n" x.Item.Name (System.Math.Round((x.Item.Price + x.BasicTaxes + x.importDuty),2)))
+            let totaltax = System.Math.Round((taxes order),2)
+            let total1 = (price order) + (taxes order)
+            let total = System.Math.Round(total1,2)
+            printf "Total Taxes %M\n"  totaltax
+            printf "Total %M\n"  total
+            
 
-        PrintRecit prodSeq
+                
+            
+

@@ -8,9 +8,13 @@ namespace SalesTaxes
 {
     class Book : Product
     {
-        public Book()
-        { 
-            IsExempt = true; 
-        }       
+        public override decimal GetSalesTax()
+        {
+            return 0.0m;
+        }
+        public override decimal GetTotal()
+        {
+            return Price + GetSalesTax();
+        }
     }
 }

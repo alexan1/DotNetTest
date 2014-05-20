@@ -18,14 +18,14 @@ namespace TrafficFlow
 
             var mytraffic = new Traffic
             {
-                mycar = car1,
-                LightList = lights1
+                CurrentCar = car1,
+                Lights = lights1
 
             };
 
-            Traffic.lengthbetweenLights = 150; 
+            Traffic.lengthBetweenLights = 150; 
 
-            var traveltime = mytraffic.getTravelTime();
+            var traveltime = mytraffic.GetTravelTime();
 
             Console.WriteLine(string.Format("Time for car: {0}", traveltime));
             Console.ReadLine();  
