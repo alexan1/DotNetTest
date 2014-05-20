@@ -62,13 +62,16 @@
 <member name="">
 
 </member>
-<member name="">
+<member name="T:SalexTaxes.Product.Order">
+
+</member>
+<member name="T:SalexTaxes.Product">
 
 </member>
 <member name="">
 
 </member>
-<member name="T:SalexTaxes.SalexTaxes">
+<member name="T:SalexTaxes.Program">
 
 </member>
 </members>

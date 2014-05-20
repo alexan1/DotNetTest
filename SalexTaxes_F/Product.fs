@@ -1,4 +1,6 @@
-﻿namespace SalexTaxes    
+﻿namespace SalexTaxes
+
+module Product = 
 
     type ProductType = 
         |food = 1
@@ -12,22 +14,27 @@
         Price : decimal;        
         IsImport: bool;
         IsExempt : bool}
-
-    type ShoppingCart =
-        {item : Product;
-        Quantity: int;
-        Taxes: decimal}
-
-    type Recit = seq<ShoppingCart>
     
-    module SalexTaxes =
+    //type Taxes = Product.Price
+    let Tax rate price = (price : decimal) * rate
+    let BasicTax = Tax 0.1m
+    let ImportDuty = Tax 0.05m 
+
+    type ShoppingCartItem =
+        {Item : Product;
+        Quantity: int}
+        member x.Taxes = 
+            match x.Item.Type with
+                | ProductType.food | ProductType.book | ProductType.medical -> BasicTax(x.Item.Price)
+                | _ -> 0.0m
+
+        //With Taxes = Product.Price
+
+    
+    
+    module Order =
+                 
         let PrintRecit recit = 
-            Seq.iter (fun x -> printf "%s\r" x.Name) recit
+            recit |> List.iter (fun x -> printf "%s" x.Item.Name)
+            recit |> List.iter (fun x -> printf "%M" x.Item.Price)
 
-        let prod1 = {Name = "book"; Type = ProductType.book; Price = 12.49m; IsImport = false; IsExempt = true} 
-        let prod2 = {Name = "music CD"; Type = ProductType.other; Price = 14.99m; IsImport = false; IsExempt = false} 
-        let prod3 = {Name = "chocolate bar"; Type = ProductType.food; Price = 0.85m; IsImport = false; IsExempt = true} 
-
-        let prodSeq =  [prod1; prod2; prod3]
-
-        PrintRecit prodSeq
