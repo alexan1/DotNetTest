@@ -10,8 +10,6 @@ T:\Alex\Projects\DotNetTest\SalesTaxes\bin\Debug\SalesTaxes.exe.config
 T:\Alex\Projects\DotNetTest\SalesTaxes\obj\Debug\SalesTaxes.exe
 =======
 T:\Alex\Projects\DotNetTest\SalesTaxes\obj\Debug\SalesTaxes.csprojResolveAssemblyReference.cache
-T:\Alex\Projects\DotNetTest\SalesTaxes\obj\Debug\SalesTaxes.exe
-T:\Alex\Projects\DotNetTest\SalesTaxes\bin\Debug\SalesTaxes.exe.config
 T:\Alex\Projects\DotNetTest\SalesTaxes\bin\Debug\SalesTaxes.exe
 T:\Alex\Projects\DotNetTest\SalesTaxes\bin\Debug\SalesTaxes.pdb
 >>>>>>> design

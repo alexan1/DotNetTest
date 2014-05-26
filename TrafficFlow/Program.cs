@@ -39,8 +39,6 @@ namespace TrafficFlow
             lstProducts.Add(new Light { Number = 1, SwitchTime = 20 });
             lstProducts.Add(new Light { Number = 2, SwitchTime = 30 });
             return lstProducts;
-        }
-
-        
+        }        
     }
 }

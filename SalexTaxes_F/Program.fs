@@ -1,12 +1,12 @@
 ﻿namespace SalexTaxes
 open System
 open Product
-open SalexTaxes
+open Order
 
 module Program = 
 
     [<EntryPoint>]
-    let main (argv :string[]) = 
+    let main argv = 
     
         let order1 =  [
             {Item = {Name = "book"; Type = Book; Price = 12.49m; IsImport = false}; Quantity = 1};
