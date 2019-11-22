@@ -59,8 +59,8 @@
     <Compile Include="TrafficUnitTest.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\SalesTaxes\SalesTaxes.csproj">
-      <Project>{6df6aacd-41a5-4c4c-9810-42698201bd67}</Project>
+    <ProjectReference Include="..\Salex_Tax\SalesTaxes.csproj">
+      <Project>{cfdbaf48-c018-4085-a558-6e343273a8c8}</Project>
       <Name>SalesTaxes</Name>
     </ProjectReference>
     <ProjectReference Include="..\TrafficFlow\TrafficFlow.csproj">

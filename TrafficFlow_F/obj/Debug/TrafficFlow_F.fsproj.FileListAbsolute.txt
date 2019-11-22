@@ -1,8 +1,0 @@
-T:\Alex\Projects\DotNetTest\TrafficFlow_F\bin\Debug\TrafficFlow_F.exe.config
-T:\Alex\Projects\DotNetTest\TrafficFlow_F\bin\Debug\TrafficFlow_F.XML
-T:\Alex\Projects\DotNetTest\TrafficFlow_F\bin\Debug\TrafficFlow_F.exe
-T:\Alex\Projects\DotNetTest\TrafficFlow_F\bin\Debug\TrafficFlow_F.pdb
-T:\Alex\Projects\DotNetTest\TrafficFlow_F\bin\Debug\FSharp.Core.dll
-T:\Alex\Projects\DotNetTest\TrafficFlow_F\bin\Debug\FSharp.Core.xml
-T:\Alex\Projects\DotNetTest\TrafficFlow_F\obj\Debug\TrafficFlow_F.exe
-T:\Alex\Projects\DotNetTest\TrafficFlow_F\obj\Debug\TrafficFlow_F.pdb
