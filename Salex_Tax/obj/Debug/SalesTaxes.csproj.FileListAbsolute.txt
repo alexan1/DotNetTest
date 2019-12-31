@@ -1,5 +1,0 @@
-C:\repo\DotNetTest\Salex_Tax\bin\Debug\Salex_Tax.exe.config
-C:\repo\DotNetTest\Salex_Tax\bin\Debug\Salex_Tax.exe
-C:\repo\DotNetTest\Salex_Tax\bin\Debug\Salex_Tax.pdb
-C:\repo\DotNetTest\Salex_Tax\obj\Debug\Salex_Tax.exe
-C:\repo\DotNetTest\Salex_Tax\obj\Debug\Salex_Tax.pdb
